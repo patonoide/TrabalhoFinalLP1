@@ -13,12 +13,16 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
+#include "cabecalho.h"
 /*
  * 
  */
 int main(int argc, char** argv) {
-
+    int opcao =0;
+    Lista * lista;
+    
+    
     return (EXIT_SUCCESS);
 }
 
