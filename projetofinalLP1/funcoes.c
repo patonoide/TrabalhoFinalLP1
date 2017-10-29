@@ -12,7 +12,7 @@ Lista * iniciarPrincipal() {
     FILE * principal;
     int x = 0, codigo = 0, y = 0, contano = 0, contagenero = 0;
     char ano[4];
-    char c;
+    char c, pontoevirgula=';';
     Lista * lista;
     int tamanho;
     principal = fopen("entrada.txt", "rt");
@@ -21,7 +21,7 @@ Lista * iniciarPrincipal() {
     lista->filme = (Filme *) malloc(tamanho * (sizeof (Filme)));
     while (x != tamanho) {
         c = fgetc(principal);
-        if (strcmp(c, ";") == 0) {
+        if ((strcmp(c, pontoevirgula)) == 0) {
             codigo++;
             c = fgetc(principal);
         };
