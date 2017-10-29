@@ -15,3 +15,13 @@ int ano;
 int quantidade;
 char genero[10];
 };
+typedef struct filme Filme;
+
+struct lista{
+    Filme * filme;
+    int numero;
+    Filme * prox;
+};
+typedef struct lista Lista;
+
+
