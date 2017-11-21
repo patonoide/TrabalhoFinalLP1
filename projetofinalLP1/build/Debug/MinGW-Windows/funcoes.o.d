@@ -1,3 +1,3 @@
-build/Debug/MinGW-Windows/funcoes.o: funcoes.c cabecalho.h
+build/Debug/MinGW-Windows/funcoes.o: funcoes.c header.h
 
-cabecalho.h:
+header.h:

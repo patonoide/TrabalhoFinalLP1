@@ -1,3 +1,3 @@
-build/Debug/MinGW-Windows/main.o: main.c cabecalho.h
+build/Debug/MinGW-Windows/main.o: main.c header.h
 
-cabecalho.h:
+header.h:
