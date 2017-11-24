@@ -24,6 +24,7 @@ int main(int argc, char** argv) {
     int opcao = 1;
     Lista * original;
     Lista * modificado;
+    // inicia as duas listas.
     original = iniciarPrincipal();
     modificado = iniciarPrincipal();
     while (opcao != 0) {
