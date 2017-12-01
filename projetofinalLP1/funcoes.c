@@ -261,8 +261,9 @@ void buscar(Lista*atual) {
         {
             //pesquisa por nome
             printf("Digite o nome do Filme: ");
-            fflush(stdin);
-            fgets(nome, 100, stdin);
+            
+            setbuf(stdin,NULL);
+            fgets(nome, 99, stdin);
             while (x < atual->tamanho) {
                 if (strcasecmp(strtok(nome, "\n"), f->titulo) == 0) {
                     printf("\n");
@@ -308,7 +309,8 @@ void buscar(Lista*atual) {
 
             //pesquisa por genero
             printf("Digite o genero do Filme: ");
-            fflush(stdin);
+            
+            setbuf(stdin,NULL);
             fgets(genero, 10, stdin);
             while (x < atual->tamanho) {
                 if (strcasecmp(genero, f->genero) == 0) {
@@ -355,7 +357,7 @@ void relAno(Lista * lista) {
             fprintf(atual, "%d", f->quantidade);
             fprintf(atual, "%s", ";");
             fprintf(atual, "%s", f->genero);
-            fflush(stdout);
+            
 
 
 
@@ -373,7 +375,8 @@ void relGenero(Lista * lista) {
     char genero[10];
     //escreve em um arquivo texto todos os filmes do genero desejado
     printf("\nDigite o genero que voce deseja: ");
-    fflush(stdin);
+    
+    setbuf(stdin,NULL);
     fgets(genero, 10, stdin);
     FILE * atual;
     if ((atual = fopen("relatorio_genero.txt", "w")) == NULL) {
@@ -389,7 +392,7 @@ void relGenero(Lista * lista) {
             fprintf(atual, "%d", f->quantidade);
             fprintf(atual, "%s", ";");
             fprintf(atual, "%s", f->genero);
-            fflush(stdout);
+            
 
 
 
